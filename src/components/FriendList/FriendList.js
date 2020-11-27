@@ -1,4 +1,4 @@
-import PropTypes, { func } from 'prop-types';
+import PropTypes from 'prop-types';
 import s from './FriendList.module.css';
 import FriendListItem from './FriendListItem';
 
