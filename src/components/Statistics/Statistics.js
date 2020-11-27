@@ -20,7 +20,7 @@ export default function Statistics({title, stats}) {
         ))}
       </ul>
     </section>
-  );
+  )
 }
 
 Statistics.propTypes = {
