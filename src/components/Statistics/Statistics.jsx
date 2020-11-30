@@ -1,16 +1,16 @@
 import PropTypes from 'prop-types';
-import randomColor from './randomColor';
+import randomColor from '../function-components/randomColor';
 import s from './Statistics.module.css';
 
-
-export default function Statistics({title, stats}) {
-    return (
-        <section className={s.statistics}>
+export default function Statistics({ title, stats }) {
+  return (
+    <section className={s.statistics}>
       {title && <h2 className="title">Upload stats</h2>}
 
       <ul className={s.statList}>
         {stats.map(stat => (
-          <li key={stat.id}
+          <li
+            key={stat.id}
             className={s.item}
             style={{ backgroundColor: randomColor() }}
           >
@@ -20,7 +20,7 @@ export default function Statistics({title, stats}) {
         ))}
       </ul>
     </section>
-  )
+  );
 }
 
 Statistics.propTypes = {

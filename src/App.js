@@ -1,16 +1,14 @@
-import user from './components/Profile/user.json';
-import Profile from './components/Profile/Profile';
+import user from './components/data/user.json';
+import Profile from './components/Profile/Profile.jsx';
 
-import statisticalData from './components/Statistics/statistical-data.json';
-import Statistics from './components/Statistics/Statistics';
+import statisticalData from './components/data/statistical-data.json';
+import Statistics from './components/Statistics/Statistics.jsx';
 
-import friends from './components/FriendList/friends.json';
-import FriendList from './components/FriendList/FriendList';
+import friends from './components/data/friends.json';
+import FriendList from './components/FriendList/FriendList.jsx';
 
-
-import transactions from './components/TransactionHistory/transactions.json';
-import TransactionHistory from './components/TransactionHistory/TransactionHistory';
-
+import transactions from './components/data/transactions.json';
+import TransactionHistory from './components/TransactionHistory/TransactionHistory.jsx';
 
 export default function App() {
   return (
@@ -28,7 +26,7 @@ export default function App() {
 
       <FriendList friends={friends} />
 
-      <TransactionHistory items={transactions} />;
+      <TransactionHistory items={transactions} />
     </div>
   );
 }
