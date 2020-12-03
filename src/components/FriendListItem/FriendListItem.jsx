@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import s from './FriendList.module.css';
+import s from './FriendListItem.module.css';
 
 export default function FriendListItem({ avatar, name, isOnline }) {
   return (
